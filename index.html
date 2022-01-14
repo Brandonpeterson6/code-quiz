@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Quiz</title>
+    <link rel="stylesheet" href="./assets/stylesheet.css" />
+</head>
+
+<body>
+    <header>
+        <div id="timer"></div>
+    </header>
+    <main id="wrapper">
+        <div id="quiz">
+            <h2>Coding Quiz</h2>
+            <p>Try to answer the questions before the time runs out.
+                Incorrect answers will deduct 5 seconds from your time!
+            </p>
+        </div>
+
+        <ul id="choices" class="hide">
+            <li><button id="choiceA"></button></li>
+            <li><button id="choiceB"></button></li>
+            <li><button id="choiceC"></button></li>
+            <li><button id="choiceD"></button></li>
+        </ul>
+        
+        <button id="start">Start Quiz</button>
+        <div id="result"></div>
+
+        <div id="end-screen" class="hide">
+            <h2>All done!</h2>
+            <p>Your final score is <span id="final-score"></span>.</p>
+            <p>
+                Enter initials: <input type="text" id="initials" max="3" />
+                <button id="submit">Submit</button>
+            </p>
+        </div>
+
+        <div id="score-screen" class="hide">
+            <div id="score-header">
+                <h3>Scoreboard</h3>
+            </div>
+            <div>
+                <ul id="score-results"></ul>
+            </div>
+            <div>
+                <button id="clear">Clear</button>
+                <button id="playAgain">Play Again</button>
+            </div>
+        </div>
+
+    </main>
+    <script src="./assets/script.js"></script>
+</body>
+
+</html>
